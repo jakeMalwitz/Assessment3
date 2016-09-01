@@ -1,0 +1,11 @@
+<a href="#addHero">Add More Heroes</a>
+
+
+<div id="heroList" ng-repeat="hero in all">
+<p id="hero" name="alias">{{hero.alias}}</p>
+<p id="hero" name="first_name">{{hero.first_name}}</p>
+<p id="hero" name="last_name">{{hero.last_name}}</p>
+<p id="hero" name="city">{{hero.city}}</p>
+<p id="hero" name="superpower">{{hero.power_name}}</p>
+<button class="delete" ng-click="deleteHero(hero._id)">Delete</button>
+</div>
